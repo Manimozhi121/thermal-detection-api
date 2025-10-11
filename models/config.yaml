@@ -1,0 +1,28 @@
+# models/config.yaml
+
+model:
+  name: yolov8n             # lightweight model (you can swap to yolov8s)
+  pretrained: true
+  input_size: 640
+  num_classes: 1            # humans only
+  class_names: ["person"]
+
+training:
+  epochs: 40
+  batch_size: 16
+  learning_rate: 0.001
+  optimizer: Adam
+  early_stopping: true
+  device: cuda
+  mixed_precision: true
+
+data:
+  train: data/processed/train/images
+  val: data/processed/val/images
+  test: data/processed/test/images
+  annotations_format: YOLO  
+
+export:
+  onnx: true
+  onnx_path: models/best.onnx
+  trt: true

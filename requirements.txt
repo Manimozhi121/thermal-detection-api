@@ -1,0 +1,27 @@
+# Core deep learning framework
+torch>=2.0
+torchvision>=0.15
+
+# YOLOv8 for training, inference, and ONNX export
+ultralytics>=8.0.200
+
+# Image and video processing
+opencv-python
+numpy
+matplotlib
+
+# ONNX export and runtime (for benchmarking and conversion)
+onnx
+onnxruntime
+
+# Optional: TensorRT for edge optimization (uncomment if available)
+# tensorrt
+
+# Utilities
+tqdm
+pyyaml
+
+# FastAPI Server
+fastapi
+uvicorn
+python-multipart
