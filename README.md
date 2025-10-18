@@ -1,6 +1,6 @@
 # VigilSense API — Thermal Human Detection Backend
 
-FastAPI backend powering the **VigilSense** system for real-time human and vehicle detection in thermal imagery.  
+FastAPI backend powering the **VigilSense** system for real-time human detection in thermal imagery.  
 Serves a fine-tuned **YOLOv8** model optimized for edge deployment.
 
 ## Tech Stack
